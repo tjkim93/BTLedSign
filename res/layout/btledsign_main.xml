@@ -1,0 +1,245 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/smalltittle"
+                android:text="@string/strText"
+                android:textColor="@color/smalltittleText" />
+
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	                        
+	            <EditText
+	                android:id="@+id/editTextBanner"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignBottom="@+id/buttonDone"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_toLeftOf="@+id/buttonDone"
+	                android:ems="10" >
+<!--                <requestFocus />  --> 
+	            </EditText>
+
+	            
+	            <Button
+	                android:id="@+id/buttonDone"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:onClick="OnButtonDone"
+	                android:text="@string/strDone" >
+	                <requestFocus /> 
+	           </Button>
+
+	        </RelativeLayout>    
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/smalltittle"
+                android:text="@string/strFont"
+                android:textColor="@color/smalltittleText" />
+
+          	<Spinner
+          	    android:id="@+id/SpinnerFont"
+          	    style="android:spinnerStyle"
+          	    android:layout_width="match_parent"
+          	    android:layout_height="50dp"
+          	    android:drawSelectorOnTop="true"
+          	    android:dropDownHeight="50dp" >
+	        </Spinner>            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/smalltittle"
+                android:text="@string/strInfo"
+                android:textColor="@color/smalltittleText" />
+
+		    <RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical" >
+		
+		        <TextView
+		            android:id="@+id/TextView06"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:paddingLeft="5dp"
+		            android:text="@string/strPhyRes"/>
+		        
+		       	<TextView
+		            android:id="@+id/TextViewPhyRes"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:paddingRight="5dp"
+		            android:text="***"/>
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical" >
+		
+		        <TextView
+		            android:id="@+id/TextView07"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:paddingLeft="5dp"
+		            android:text="@string/strVirRes"/>
+		        
+		       	<TextView
+		            android:id="@+id/TextViewVirRes"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:paddingRight="5dp"
+		            android:text="***"/>
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical" >
+		
+		        <TextView
+		            android:id="@+id/TextView08"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:paddingLeft="5dp"
+		            android:text="@string/strBPP"/>
+		        
+		       	<TextView
+		            android:id="@+id/TextViewBPP"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:paddingRight="5dp"
+		            android:text="***"/>
+		    </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/smalltittle"
+                android:text="@string/strPreview"
+                android:textColor="@color/smalltittleText" />
+
+              
+            <com.tj.btledsign.LedSignView
+                android:id="@+id/ViewBanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/TextView09"
+                android:layout_marginBottom="50dp"
+                android:background="@color/Green" />
+        </RelativeLayout>
+
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+
+
+		    <ImageButton
+		        android:id="@+id/buttonSync"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dp"
+		        android:contentDescription="@string/strSync"
+		        android:onClick="onClickSync"
+		        android:src="@drawable/sync"/>
+		    
+		    <ImageButton
+		        android:id="@+id/buttonFile"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/buttonSync"
+		        android:contentDescription="File"
+		        android:onClick="onClickFile"
+		        android:src="@drawable/open"/>
+
+		    <ImageButton
+		        android:id="@+id/buttonSave"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@+id/buttonFile"
+		        android:contentDescription="Save"
+		        android:onClick="onClickSave"
+		        android:src="@drawable/save"/>		    
+
+            <ZoomButton
+                android:id="@+id/zoomButtonMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:onClick="onClickZoomMinus"
+                android:src="@android:drawable/btn_minus" />
+
+            <ZoomButton
+                android:id="@+id/zoomButtonPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/zoomButtonMinus"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:onClick="onClickZoomPlus"
+                android:src="@android:drawable/btn_plus" />		    
+		    
+		</RelativeLayout>
+		
+    </LinearLayout>
+

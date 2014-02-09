@@ -1,0 +1,95 @@
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.tj.btledsign.LedSignView
+                android:id="@+id/ViewBanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/TextView05"
+                android:layout_marginBottom="45dp"
+                android:background="@color/Green" />
+                 
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/buttonColor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:minWidth="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitXY"
+                android:onClick="onClickColorPickerDialog"
+                android:text="@string/strColor" />
+            
+            <Button
+                android:id="@+id/buttonPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/buttonColor"
+                android:onClick="onClickPlay"
+                android:text="@string/strPlay" />        
+                
+            <CheckBox
+                android:id="@+id/checkBoxVScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/seekBarSpeed"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/buttonPlay"
+                android:onClick="onClickVScrollLock"
+                android:text="@string/strLock" />            
+
+            <SeekBar
+                android:id="@+id/seekBarSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/checkBoxVScroll"
+                android:max="8"
+                android:minWidth="100dp" />
+            
+            <ZoomButton
+                android:id="@+id/zoomButtonMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:onClick="onClickZoomMinus"
+                android:src="@android:drawable/btn_minus" />
+
+            <ZoomButton
+                android:id="@+id/zoomButtonPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/zoomButtonMinus"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:onClick="onClickZoomPlus"
+                android:src="@android:drawable/btn_plus" />
+
+        </RelativeLayout>
+		
+    </LinearLayout>

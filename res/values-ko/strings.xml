@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">블루투스 전광판</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="strText">문장입력</string>
+    <string name="strFont">글꼴선택</string>
+    <string name="strInfo">디스플레이 정보</string>
+    <string name="strPreview">미리보기</string>
+    <string name="strColor">색상</string>
+    <string name="strDone">입력</string>
+    <string name="strPlay">시작</string>
+    <string name="strStop">정지</string>
+    <string name="strLock">수직이동잠금</string>
+    <string name="strColorPick">색상 선택</string>
+    <string name="strPhyRes">물리해상도</string>
+    <string name="strVirRes">가상해상도 </string>
+    <string name="strBPP">색상(bpp)</string>
+    <string name="strBT">블루투스</string>
+    <string name="strSync">동기화</string>
+    
+    <string name="strFileOpen">파일 열기</string>
+    <string name="strFileSave">파일 저장</string>
+    <string name="strFileDel">삭제</string>
+    <string name="strFileNew">새 파일</string>
+    <string name="strSavedTo">저장중: </string>
+    
+    <string name="not_connected">장치가 연결되지 않았습니다.</string>
+    <string name="bt_not_enabled_leaving">블루투스가 활성화되지 않았습니다.</string>
+    <string name="title_connecting">연결 중...</string>
+    <string name="title_connected_to">연결됨: </string>
+    <string name="title_not_connected">연결되지 않았습니다.</string>
+    <string name="connected_to">연결</string>
+    <string name="unable_connect">장치를 연결할 수 없습니다</string>
+    <string name="connection_lost">장치 연결이 끊어졌습니다</string>
+    
+    <!--  DeviceListActivity -->
+    <string name="scanning">장치를 스캔 중...</string>
+    <string name="select_device">연결하는 장치를 선택</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">아무 장치가 없습니다</string>
+    <string name="title_paired_devices">Paring된 장치</string>
+    <string name="title_other_devices">검색된 블루투스 장치</string>
+    <string name="button_scan">장치 스캔</string>    
+</resources>

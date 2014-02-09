@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#070"
+        android:paddingLeft="5dp"
+        android:text="@string/title_paired_devices"
+        android:textColor="#fff" />
+
+    <ListView
+        android:id="@+id/paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.81"
+        android:background="@drawable/border_rectangle"
+        android:stackFromBottom="false" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title_new_devices"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#007"
+            android:paddingLeft="5dp"
+            android:text="@string/title_other_devices"
+            android:textColor="#fff" />
+
+        <ProgressBar
+            android:id="@+id/progressBarSearch"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="143dp"
+        android:layout_weight="0.26"
+        android:background="@drawable/border_rectangle"
+        android:stackFromBottom="false" />
+    
+    <ImageButton
+        android:id="@+id/button_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SearchOnClick"
+        android:src="@drawable/search" />
+
+</LinearLayout>
